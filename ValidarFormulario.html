@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario2</title>
+    <script type="text/javascript" src="ValidarFormulario.js"></script>
+
+    <script type="text/javascript"
+            src="http://cidades-estados-js.googlecode.com/files/cidades-estados-v0.2.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            new dgCidadesEstados(document.getElementById('estado'), document.getElementById('cidade'), true);
+        }
+    </script>
+
+    <link rel="stylesheet" href="borda.css">
+
+</head>
+<body>
+
+<form id="form1" name="form1">
+
+    Nome:<br>
+    <input name="nome" type="text"><br><br>
+
+
+    Idade:<br>
+    <input name="idade" type="number"><br><br>
+
+
+    Email:<br>
+    <input type="text" name="email">
+    <div id="e-mail"></div><br><br>
+
+
+    Telefone:<br>
+    <input name="telefone" type="text"><br><br>
+
+
+    <div id="sexo">
+        Sexo<br>
+           Homem: <input type="radio" value="homem" name="sexos">
+           Mulher: <input type="radio" value="mulher" name="sexos"><br><br>
+    </div>
+
+
+
+    <div id="linguas">
+        Linguas Faladas<br>
+    <input type="checkbox" name="lingua" value="Português">Português
+    <br>
+    <input type="checkbox" name="lingua" value="Inglês">Inglês
+    <br>
+    <input type="checkbox" name="lingua" value="Espanhol">Espanhol
+    <br><br></div>
+
+    <select id="estado" name="estadoCidade"></select><br><br>
+    <select id="cidade" name="estadoCidade"></select><br><br>
+
+    <button id="vali" name="vali" onclick="validar()">Enviar</button>
+
+</form>
+
+</body>
+</html>

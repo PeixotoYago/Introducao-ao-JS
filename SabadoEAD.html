@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+    <title>Formulario</title>
+
+ <b><h1>Formulário</h1></b>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+<form>
+<table>
+
+E-mail :<br>
+<input type=”email”><br>
+<br>  
+First name:<br>
+<input type="text" name="firstname" placeholder="Digite seu nome">
+<br>
+Last name:<br><input type="text" name="lastname"placeholder="Digite seu segundo nome"><br>
+<br>
+
+Password:<br>
+<input type="password" name="pwd"><br>
+<br>
+
+Telefone:<br> 
+<input type=”tel”><br>
+<br>
+
+Data de Nascimento:<br><input type="date" name="data"><br>
+<br>
+
+Qual a sua idade:<br><input id=”numero” type="number" name="numero" max=”3” min=”1” step=”1”><br>
+<br>
+
+<input type="radio" name="sex" value="male">Homem
+<br>
+<input type="radio" name="sex" value="female">Mulher
+<br><br>
+
+Selecione a cidade em que mora:<br>
+<select >
+      <option value="GO">Buriti Alegre</option>
+      <option value="GO">Caldas Novas</option>
+      <option value="GO">Goiatuba</option>
+      <option value="GO">Morrinhos</option>
+      <option value="GO">Pontalina</option>
+      <option value="GO">Rio quente</option>
+</select><br>
+<br>
+
+Data de nacimento:<br>
+    <input type="date" id="dataNS" /><br><br>
+    Peso (KG):<br>
+    <input type="text" id="peso" /><br><br>
+    Altura(M):<br>
+    <input type="text" id="altura" /><br><br>
+    Qual veiculo você mais usa:<br>
+<input type="checkbox" name="vehicle" value="Bike">Bike
+<br>
+<input type="checkbox" name="vehicle" value="Car">Car
+<br><br>
+
+Escolha uma cor:<input type="color" name="cor" ><br>
+<br>
+
+<fieldset>
+<legend>Nome de sua mãe</legend>
+<input type="text" name="firstname" placeholder="Digite o nome da sua mãe.">
+</fieldset><br>
+
+<fieldset>
+<legend>Nome de seu pai</legend>
+<input type="text" name="firstname" placeholder="Digite o nome de seu pai">
+</fieldset><br>
+
+Qual comida você prefere:<br><input id = "comida_id" name="comida" type="text" list= "comidas_id"><br>
+<br>
+<datalist id="comidas_id">
+<option value="Pizza">
+<option value="Sopa">
+<option value="Salada">
+</datalist><br>
+<br>
+
+Se voce possui carro informe a placa:<br>
+<input id="placa_id" name="placa" type="text" pattern="[A-Z]{3} [0-9]{4}"><br>
+<br>
+
+<textarea name=”texto” rows="10" cols="30" maxlenght=”50”
+placeholder="Escreva uma frase com até 50 caracteres aqui.">
+</textarea><br>
+<br>
+
+<input type="submit" value="Enviar"><br>
+
+<label for="campo">Se estiver tudo correto click em "Enviar".</label><br>
+<br>
+<input type="reset" value="Click para reiniciar o formulario"> 
+
+</table>
+</form> 
+    </body>   
